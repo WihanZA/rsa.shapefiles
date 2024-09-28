@@ -1,30 +1,20 @@
 library(usethis)
 library(devtools)
 
+# usethis::create_tidy_package()
 usethis::use_tidy_github()
 usethis::use_tidy_github_labels()
 usethis::use_tidy_github_actions()
+# usethis::use_pkgdown_github_pages()
 
 use_github_action("test-coverage")
 
 devtools::build_readme()
 
-# usethis::use_pkgdown_github_pages()
+proj_sitrep()
+git_sitrep()
 
-# proj_sitrep()
-# git_sitrep()
 
-# Set up a new package directory
-# create_package("path/to/your/package")
-
-# # Navigate to the new package directory
-# setwd("path/to/your/package")
-
-# # Initialize Git
-# use_git()
-
-# # Create common files
-# use_readme_rmd()
 # use_mit_license("Your Name")
 # use_news_md()
 # use_code_of_conduct()
