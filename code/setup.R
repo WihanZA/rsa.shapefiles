@@ -1,14 +1,14 @@
 library(usethis)
 library(devtools)
 
-usethis::use_git()
 usethis::use_tidy_github()
+usethis::use_tidy_github_labels()
+usethis::use_tidy_github_actions()
 
+use_github_action("test-coverage")
 
-# usethis::use_github()
-# usethis::use_tidy_github()
-# usethis::use_tidy_github_actions()
-# usethis::use_tidy_github_labels()
+devtools::build_readme()
+
 # usethis::use_pkgdown_github_pages()
 
 # proj_sitrep()
