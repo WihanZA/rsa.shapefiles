@@ -1,7 +1,10 @@
 library(usethis)
 library(devtools)
 
-# usethis::use_git()
+usethis::use_git()
+usethis::use_tidy_github()
+
+
 # usethis::use_github()
 # usethis::use_tidy_github()
 # usethis::use_tidy_github_actions()
