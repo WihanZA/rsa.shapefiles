@@ -22,6 +22,7 @@ usethis::use_r("subplaces")
 
 devtools::document()
 devtools::check()
+devtools::install()
 
 
 # Other -------------------------------------------------------------------
